@@ -18,6 +18,6 @@ app.get("/", (req, res) => {
 // - subida de archivos
 // - etc.
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Servidor Express escuchando en puerto ${PORT}`);
 });
