@@ -13,6 +13,11 @@ app.get("/", (req, res) => {
   res.send("API funcionando en local 🚀");
 });
 
+app.get("/api/hello", (req, res) => {
+  res.json({ message: "Hola desde Express API 🚀" });
+});
+
+
 // Aquí luego agregaremos:
 // - endpoints para BD
 // - subida de archivos
